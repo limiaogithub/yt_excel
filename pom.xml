@@ -20,6 +20,12 @@
             <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
         </license>
     </licenses>
+    <developers>
+        <developer>
+            <name>limiao</name>
+            <email>18640290294@163.com</email>
+        </developer>
+    </developers>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -47,7 +53,6 @@
             <version>1.0.0</version>
         </dependency>
     </dependencies>
-
     <build>
         <plugins>
             <plugin>

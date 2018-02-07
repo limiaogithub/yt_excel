@@ -9,7 +9,7 @@ public class EncodeUtils {
      *
      * @param agent agent
      * @param s     名字
-     * @return
+     * @return String
      */
     public static String toUtf8String(String agent, String s) {
         try {

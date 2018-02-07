@@ -34,7 +34,7 @@ public class ExcelUtils {
      * @param file        MultipartFile
      * @param clazz       class类
      * @param excelConfig 各种配置参数
-     * @return List<T>
+     * @return 对象集合
      * @throws ParseExcelException
      */
     public static <T> List<T> readExcel(MultipartFile file, Class<T> clazz, ExcelConfig excelConfig) throws ParseExcelException {
@@ -50,7 +50,7 @@ public class ExcelUtils {
      *
      * @param file  MultipartFile
      * @param clazz class类
-     * @return List<T>
+     * @return 对象集合
      * @throws ParseExcelException
      */
     public static <T> List<T> readExcel(MultipartFile file, Class<T> clazz) throws ParseExcelException {
@@ -63,7 +63,7 @@ public class ExcelUtils {
      * @param file        file
      * @param clazz       class类
      * @param excelConfig 各种配置参数
-     * @return List<T>
+     * @return 对象集合
      * @throws ParseExcelException
      */
     public static <T> List<T> readExcel(File file, Class<T> clazz, ExcelConfig excelConfig) throws ParseExcelException {
@@ -80,7 +80,7 @@ public class ExcelUtils {
      *
      * @param file  file
      * @param clazz class类
-     * @return List<T>
+     * @return 对象集合
      * @throws ParseExcelException
      */
     public static <T> List<T> readExcel(File file, Class<T> clazz) throws ParseExcelException {
@@ -93,7 +93,7 @@ public class ExcelUtils {
      * @param inputStream excel文件输入流
      * @param clazz       class类
      * @param excelConfig 各种配置参数
-     * @return List<T>
+     * @return 对象集合
      * @throws ParseExcelException
      */
     private static <T> List<T> readExcel(InputStream inputStream, String fileName, Class<T> clazz, ExcelConfig excelConfig) throws ParseExcelException {
