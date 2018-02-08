@@ -1,7 +1,25 @@
 # yt_excel
 以注解的方式完成excel的导入导出，一行代码即可，基于poi</br>
+<h3>介绍</h3>
+相信大多数公司都基于poi封装了生成和读取excel的工具，yt_excel就是其中的一个实现，但是他比较简单，基于注解，支持表达式转义等特点，值得一用。</br>
+
+<h3>特点</h3>
+1.基于apache poi</br>
+2.注解的方式进行配置</br>
+3.支持多sheet</br>
+4.使用简单</br>
+
 <h3>集成</h3>
-1.编写你的Pojo类</br>
+1.引入maven依赖</br>
+<pre>
+&lt;dependency&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;groupId&gt;com.github.limiaogithub&lt;/groupId&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;artifactId&gt;yt_excel&lt;/artifactId&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;version&gt;1.0.0&lt;/version&gt;
+&lt;/dependency&gt;
+</pre>
+
+2.编写你的Pojo类，这里@ImportExcel指导入的字段，@ExportExcel指导出的字段，属性一看就懂了。</br>
 <pre>
 public class TestBean {
 
@@ -86,7 +104,7 @@ public class TestBean {
 }
 </pre>
 
-2.导出</br>
+3.导出</br>
 <pre>
 @ApiOperation(value = "export")
 @RequestMapping(value = "/export", method = RequestMethod.GET)
@@ -103,7 +121,7 @@ public void export() throws Exception {
 }
 </pre>
 
-3.导入</br>
+4.导入</br>
 <pre>
 @ApiOperation(value = "import")
 @RequestMapping(value = "/import", method = RequestMethod.GET)
