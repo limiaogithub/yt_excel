@@ -119,6 +119,16 @@ public void export() throws Exception {
 
     out.flush();
 }
+
+private static List<TestBean> getTestList() {
+    List<TestBean> list = new ArrayList<>();
+    TestBean testBean1 = new TestBean("name1", 123, new Date(), new BigDecimal(1111));
+    list.add(testBean1);
+    TestBean testBean2 = new TestBean("name2", 456, new Date(), new BigDecimal(2222));
+    list.add(testBean2);
+    return list;
+}
+
 </pre>
 
 4.导入</br>
