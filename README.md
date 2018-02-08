@@ -3,11 +3,15 @@
 相信大多数公司都基于poi封装了生成和读取excel的工具，yt_excel就是其中的一个实现，但是他比较简单，基于注解，支持表达式转义等特点，值得一用。</br>
 您可以下载https://github.com/limiaogithub/yt_mybatis_example 直接运行示例代码。</br>
 
-<h3>特点</h3>
+<h3>特性</h3>
 1.基于apache poi</br>
 2.注解的方式进行配置</br>
 3.支持多sheet</br>
 4.使用简单</br>
+
+<h3>准备</h3>
+1.idea开发工具
+2.大约10分钟
 
 <h3>集成</h3>
 1.引入maven依赖</br>
