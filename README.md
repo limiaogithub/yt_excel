@@ -1,6 +1,7 @@
 # yt_excel
 <h3>介绍</h3>
 相信大多数公司都基于poi封装了生成和读取excel的工具，yt_excel就是其中的一个实现，但是他比较简单，基于注解，支持表达式转义等特点，值得一用。</br>
+您可以下载https://github.com/limiaogithub/yt_mybatis_example 直接运行示例代码。</br>
 
 <h3>特点</h3>
 1.基于apache poi</br>
